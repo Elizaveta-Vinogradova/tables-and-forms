@@ -9,8 +9,8 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <form action="/pets/orders" method="POST">
-        <input type="text" name="petType" placeholder="Имя животного">
+    <form action="/pets/orders" method="post">
+        <input type="text" name="petType" placeholder="Имя животного" value="Кот">
         <div>
             <input type="radio" name="gender" value="Man"> Мужчина
         </div>
@@ -19,39 +19,42 @@
         </div>
         <div>
             <label>Цвет глаз
-                <input type="color" name="eyeColor">
+                <input type="color" name="eyeColor" value="Red">
             </label>
         </div>
         <div>
             <label>Длина хвоста
-                <input type="number" name="tailLength">
+                <input type="number" name="tailLength" value="0">
             </label>
         </div>
         <div>
             <label>Имя животного
-                <input type="text" name="name">
+                <input type="text" name="name" value="Пушок">
             </label>
         </div>
         <div>
             <label>Дата рождения
-                <input type=date name="dateOfBirth">
+                <input type=date name="dateOfBirth" value="2024-01-01">
             </label>
         </div>
         <div>
             <label>Почта
-                <input type="email" name="email">
+                <input type="email" name="email" value="ex@mail.ru">
             </label>
         </div>
         <div>
             <label>Телефон
-                <input type="tel" name="phone">
+                <input type="tel" name="phone" value="+79999999999">
             </label>
         </div>
         <div>
-            <input type="text" name="rules">
+            <input type="text" name="rules" value="true">
         </div>
         <button type="submit">Отправить</button>
+
+        <button type="reset">Сбросить</button>
     </form>
+
 </main>
 </body>
 </html>
