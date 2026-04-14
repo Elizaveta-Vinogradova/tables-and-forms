@@ -10,12 +10,23 @@
     <h1>Найди себе друга!</h1>
 
     <form action="/pets/orders" method="post">
-        <input type="text" name="petType" placeholder="Имя животного" value="Кот">
         <div>
-            <input type="radio" name="gender" value="Man"> Мужчина
+        <label>Тип животное
+            <select required name="petType">
+                <option value="cat">Собака</option>
+                <option value="dog">Кошка</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label>
         </div>
         <div>
-            <input type="radio" name="gender" value="Woman"> Женщина
+            <input type="radio" name="gender" value="boy"> Мальчик
+        </div>
+        <div>
+            <input type="radio" name="gender" value="girl"> Девочка
+        </div>
+        <div>
+            <input type="radio" name="gender" value="none"> Нечто
         </div>
         <div>
             <label>Цвет глаз
@@ -24,7 +35,7 @@
         </div>
         <div>
             <label>Длина хвоста
-                <input type="number" name="tailLength" value="0">
+                <input type="range" min="7" max="120" name="tailLength">
             </label>
         </div>
         <div>
