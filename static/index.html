@@ -9,8 +9,16 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <form action="/pets/orders" method="POST">
-        <input type="text" name="petType" placeholder="Имя животного">
+    <form action="/pets/orders" method="post">
+        <div>
+        <label>Тип животное
+            <select required name="petType">
+                <option value="cat">Собака</option>
+                <option value="dog">Кошка</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label>
+        </div>
         <div>
             <input type="radio" name="gender" value="Man"> Мужчина
         </div>
